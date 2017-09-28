@@ -1,0 +1,72 @@
+#
+# Christie Hall network
+#
+subnet 10.0.11.0 netmask 255.255.255.0 {
+	authoritative;
+	option routers 10.0.11.1;
+	option subnet-mask 255.255.255.0;
+	option domain-name-servers 10.0.65.20;
+	pool {
+		failover peer "dhcp-failover";
+                default-lease-time 3600;
+                max-lease-time 3600;                
+		range 10.0.11.100 10.0.11.191;
+	}
+}
+
+#
+# Put static reservations here
+#
+host christiehall-north-00180a83e906 { # Meraki AP
+	hardware ethernet 00:18:0a:83:e9:06;
+	fixed-address 10.0.11.21;
+}
+
+host christiehall-south-00180a83ea66 { # Meraki AP
+	hardware ethernet 00:18:0a:83:ea:66;
+	fixed-address 10.0.11.22;
+}
+
+host D25HV27FDHJR { # Captive Portal bypass
+	hardware ethernet 40:6c:8f:2b:bc:f4;
+	fixed-address 10.0.11.193;
+}
+
+host C02MPE9UFH00 { # Captive Portal bypass
+	hardware ethernet 3c:15:c2:d0:c2:1c;
+	fixed-address 10.0.11.194;
+}
+
+host C02MPH17FH00 { # Captive Portal bypass
+	hardware ethernet 3c:15:c2:d0:ec:4c;
+	fixed-address 10.0.11.195;
+}
+
+host C02FTKC7DHJF { # Captive Portal bypass
+	hardware ethernet 3c:07:54:12:bb:9e;
+	fixed-address 10.0.11.196;
+}
+
+host ADP2133 { # Captive Portal bypass -- ADP kiosk
+	hardware ethernet 78:fd:94:6c:c7:25;
+	fixed-address 10.0.11.197;
+}
+
+host W8912P9V8QR { # Social Media bypass
+	hardware ethernet 00:23:6c:98:be:4f;
+	fixed-address 10.0.11.224;
+}
+
+host Christy-1103 { # Apple TV
+	hardware ethernet b0:34:95:46:94:8d;
+	fixed-address 10.0.11.230;
+}
+
+host Christi_LowerNorth { # FLIR N243 Camera
+	hardware ethernet 00:40:7f:8d:60:f1;
+	fixed-address 10.0.11.9;
+}
+
+#
+# End of /etc/dhcp/dhcpd.christie
+#

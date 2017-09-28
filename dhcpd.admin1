@@ -1,0 +1,107 @@
+#
+# Admin 1 network
+#
+subnet 10.0.13.0 netmask 255.255.255.0 {
+        authoritative;
+        option routers 10.0.13.1;
+        option subnet-mask 255.255.255.0;
+        option domain-name-servers 10.0.65.20;
+        pool {
+                failover peer "dhcp-failover";
+       		default-lease-time 3600;
+		max-lease-time 3600;
+	        range 10.0.13.100 10.0.13.191;
+        }
+}
+
+#
+# Put static reservations here
+#
+host mr16-admin-1-north-00180a35080e { # Meraki AP
+	hardware ethernet 00:18:0a:35:08:0e;
+	fixed-address 10.0.13.27;
+}
+
+host mr16-admin-1-south-00180a3508da { # Meraki AP
+	hardware ethernet 00:18:0a:35:08:da;
+	fixed-address 10.0.13.36;
+}
+
+host Printer-Admin7830 { # Main Admin Xerox
+	hardware ethernet 9c:93:4e:1d:6e:4c;
+	fixed-address 10.0.13.91;
+}
+
+host D25HV2CTDHJR { # Captive Portal bypass
+	hardware ethernet 40:6c:8f:2d:c1:db;
+	fixed-address 10.0.13.192;
+}
+
+host C02FL3AHDHJF { # Captive Portal bypass
+	hardware ethernet c8:2a:14:28:86:7c;
+	fixed-address 10.0.13.193;
+}
+
+host D25P608JF8J9 { # Captive Portal bypass
+	hardware ethernet ac:87:a3:1f:c2:b1;
+	fixed-address 10.0.13.194;
+}
+
+host QP0060T6B9S { # Captive Portal bypass
+	hardware ethernet d4:9a:20:d8:3e:5a;
+	fixed-address 10.0.13.197;
+}
+
+host D25HV2DUDHJR { # Captive Portal bypass
+	hardware ethernet 7c:c3:a1:b0:ee:56;
+	fixed-address 10.0.13.199;
+}
+
+host D25HV28XDHJR { # Social Media bypass
+	hardware ethernet 40:6c:8f:2d:bf:b5;
+	fixed-address 10.0.13.224;
+}
+
+host D25HV2CSDHJR { # Social Media bypass
+	hardware ethernet 40:6c:8f:2f:30:82;
+	fixed-address 10.0.13.225;
+}
+
+host C02RN0PJGG7L { # Social Media bypass
+	hardware ethernet 38:c9:86:50:21:64;
+	fixed-address 10.0.13.226;
+}
+
+host C02NV6DYG3QC { # Social Media bypass
+	hardware ethernet ac:87:a3:1f:d9:1b;
+	fixed-address 10.0.13.228;
+}
+
+host C02MV133FD58 { # Social Media bypass
+	hardware ethernet 3c:15:c2:dc:de:1e;
+	fixed-address 10.0.13.229;
+}
+
+host AppleTVonfright { # Social Media bypass
+	hardware ethernet b8:78:2e:58:8f:99;
+	fixed-address 10.0.13.230;
+}
+
+host CreditCardMachine { # Social Media bypass
+	hardware ethernet 60:c7:98:3b:78:9d;
+	fixed-address 10.0.13.231;
+}
+
+host C02T13GDFVH9 { # Social Media bypass
+	hardware ethernet 00:50:b6:de:90:0b;
+	fixed-address 10.0.13.232;
+}
+
+host YM9160E41BV { # Social Media bypass
+	hardware ethernet 00:25:4b:9f:17:80;
+	fixed-address 10.0.13.233;
+}
+
+#
+# End of /etc/dhcp/dhcpd.admin1
+#

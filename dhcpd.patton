@@ -1,0 +1,104 @@
+#
+# Patton Hall network
+#
+subnet 10.0.12.0 netmask 255.255.255.0 {
+        authoritative;
+        option routers 10.0.12.1;
+        option subnet-mask 255.255.255.0;
+        option domain-name-servers 10.0.65.20;
+        pool {
+                failover peer "dhcp-failover";
+                default-lease-time 3600;
+                max-lease-time 3600;                
+                range 10.0.12.100 10.0.12.191;
+        }
+}
+
+#
+# Put static reservations here
+#
+host mr16-patton-hall-east-1207-00180a350552 { # Meraki AP
+	hardware ethernet 00:18:0a:35:05:52;
+	fixed-address 10.0.12.25;
+}
+
+host mr16-patton-hall-west-1211-00180a829f22 { # Meraki AP
+	hardware ethernet 00:18:0a:82:9f:22;
+	fixed-address 10.0.12.26;
+}
+
+host mr18-patton-hall-1202-00180a7a552e { # Meraki AP
+	hardware ethernet 00:18:0a:7a:55:2e;
+	fixed-address 10.0.12.27;
+}
+
+host mr18-patton-hall-1209-00180a7a49cf { # Meraki AP
+	hardware ethernet 00:18:0a:7a:49:cf;
+	fixed-address 10.0.12.28;
+}
+
+host XRX_0000AAFA5488 { # Main Campus Xerox
+	hardware ethernet 00:00:aa:fa:54:88;
+	fixed-address 10.0.12.92;
+}
+
+host C02PQ300FVH5 { # Captive Portal bypass
+	hardware ethernet a4:5e:60:e4:ea:0d;
+	fixed-address 10.0.12.192;
+}
+
+host C02RRHFRFVH5 { # Captive Portal bypass
+	hardware ethernet 98:01:a7:98:c3:6f;
+	fixed-address 10.0.12.193;
+}
+
+host C02MPFCAFH00 { # Captive Portal bypass
+	hardware ethernet 3c:15:c2:d0:f2:50;
+	fixed-address 10.0.12.194;
+}
+
+host C02FT82YDH2G { # Captive Portal bypass
+	hardware ethernet e4:ce:8f:29:c5:dc;
+	fixed-address 10.0.12.195;
+}
+
+host C02PQBB5FVH5 { # Captive Portal bypass
+	hardware ethernet a4:5e:60:e1:8d:5f;
+	fixed-address 10.0.12.196;
+}
+
+host C02FT7K6DH2G { # Captive Portal bypass
+	hardware ethernet e4:ce:8f:27:a5:f2;
+	fixed-address 10.0.12.197;
+}
+
+host C02M728YFH00 { # Captive Portal bypass
+	hardware ethernet 78:31:c1:c6:c9:2a;
+	fixed-address 10.0.12.199;
+}
+
+host C02MPFG2FH00 { # Captive Portal bypass
+	hardware ethernet 3c:15:c2:d0:ea:ac;
+	fixed-address 10.0.12.200;
+}
+
+host BPS-AS-2465 { # Captive Portal bypass
+	hardware ethernet ec:35:86:3b:d9:28;
+	fixed-address 10.0.12.212;
+}
+
+host C02FTX9RDH2G { # Social Media bypass
+	hardware ethernet e0:f8:47:02:b5:40;
+	fixed-address 10.0.12.224;
+}
+
+host C02RRHHRFVH5 { # Social Media bypass
+	hardware ethernet 98:01:a7:95:2e:45;
+	fixed-address 10.0.12.225;
+}
+
+
+#
+# End of /etc/dhcp/dhcpd.patton
+#
+

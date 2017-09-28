@@ -1,0 +1,72 @@
+#
+# East Academic network
+#
+subnet 10.0.16.0 netmask 255.255.255.0 {
+        authoritative;
+        option routers 10.0.16.1;
+        option subnet-mask 255.255.255.0;
+        option domain-name-servers 10.0.65.20;
+        pool {
+                failover peer "dhcp-failover";
+                default-lease-time 3600;
+                max-lease-time 3600;                
+                range 10.0.16.100 10.0.16.191;
+        }
+}
+
+#
+# Put static reservations here
+#
+host mr16-eastacademic-east-00180a3459a0 { # Meraki AP
+	hardware ethernet 00:18:0a:34:59:a0;
+	fixed-address 10.0.16.23;
+}
+
+host mr24-eastacademic-west-00180a26b97a { # Meraki AP
+	hardware ethernet 00:18:0a:26:b9:7a;
+	fixed-address 10.0.16.24;
+}
+
+host mr72-east-academic-north-00180a5c8c10 { # Meraki AP
+	hardware ethernet 00:18:0a:5c:8c:10;
+	fixed-address 10.0.16.25;
+}
+
+host C02MW31UFD59 { # Captive Portal bypass
+	hardware ethernet 3c:15:c2:e2:68:7e;
+	fixed-address 10.0.16.192;
+}
+
+host W891563X8QR { # Captive Portal bypass
+	hardware ethernet 80:e6:50:23:8c:6c;
+	fixed-address 10.0.16.193;
+}
+
+host C02MNU1EFH00 { # Captive Portal bypass
+	hardware ethernet 3c:15:c2:cf:36:b4;
+	fixed-address 10.0.16.195;
+}
+
+host C02R5Q1QFVH5 { # Captive Portal bypass
+	hardware ethernet f4:5c:89:a3:4f:4f;
+	fixed-address 10.0.16.196;
+}
+
+host C02PQ9YKFVH5 { # Captive Portal bypass
+	hardware ethernet a4:5e:60:e4:fa:31;
+	fixed-address 10.0.16.197;
+}
+
+host C02MPFECFH00 { # Captive Portal bypass
+	hardware ethernet 3c:15:c2:d0:75:34;
+	fixed-address 10.0.16.198;
+}
+
+host C02PQ9YKFVH5.wired { # Captive Portal Bypass
+	hardware ethernet a8:60:b6:00:7b:5a;
+	fixed-address 10.0.16.203;
+}
+
+#
+# End of /etc/dhcp/dhcpd.east
+#

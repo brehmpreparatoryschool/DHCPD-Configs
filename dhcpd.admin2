@@ -1,0 +1,58 @@
+#
+# Admini 2 network
+#
+subnet 10.0.18.0 netmask 255.255.255.0 {
+        authoritative;
+        option routers 10.0.18.1;
+        option subnet-mask 255.255.255.0;
+        option domain-name-servers 10.0.65.20;
+        pool {
+                failover peer "dhcp-failover";
+                default-lease-time 3600;
+                max-lease-time 3600;
+                range 10.0.18.103 10.0.18.191;
+        }
+}
+
+#
+# Put static reservations here
+#
+host admin-2-east-00180a83efca { # Meraki AP
+	hardware ethernet 00:18:0a:83:ef:ca;
+	fixed-address 10.0.18.22;
+}
+
+host admin-2-west-00180a38a20e { # Meraki AP
+	hardware ethernet 00:18:0a:38:a2:0e;
+	fixed-address 10.0.18.23;
+}
+
+host Admin-2-Parking-Camera {
+	hardware ethernet 00:02:d1:12:af:fd;
+	fixed-address 10.0.18.102;
+}
+
+host C02TX1ECHV2D { # Social Media bypass
+	hardware ethernet 8c:85:90:02:8d:b2;
+	fixed-address 10.0.18.224;
+}
+
+host C02FT6YLDHJF { # Social Media bypass
+	hardware ethernet c8:2a:14:3b:40:eb;
+	fixed-address 10.0.18.225;
+}
+
+host C02MPDFSFH00 { # Social Media bypass
+	hardware ethernet 3c:15:c2:d2:c3:22;
+	fixed-address 10.0.18.226;
+}
+
+host QP93201S0TM { # Social Media bypass -- Foundation iMac
+	hardware ethernet 00:25:4b:90:54:b9;
+	fixed-address 10.0.18.227;
+}
+
+
+#
+# End of /etc/dhcp/dhcpd.admin2
+#

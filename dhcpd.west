@@ -1,0 +1,108 @@
+#
+# West Academic network
+#
+subnet 10.0.15.0 netmask 255.255.255.0 {
+        authoritative;
+        option routers 10.0.15.1;
+        option subnet-mask 255.255.255.0;
+        option domain-name-servers 10.0.65.20;
+        pool {
+                failover peer "dhcp-failover";
+                default-lease-time 3600;
+                max-lease-time 3600;                
+                range 10.0.15.100 10.0.15.191;
+	}
+}
+
+#
+# Put static reservations here
+#
+host mr16-west-academic-east-00180a830fd6 { # Meraki AP
+	hardware ethernet 00:18:0a:83:0f:d6;
+	fixed-address 10.0.15.23;
+}
+
+host mr16-west-academic-west-00180a830c5e { # Meraki AP
+	hardware ethernet 00:18:0a:83:0c:5e;
+	fixed-address 10.0.15.24;
+}
+
+host C02RRCWCFVH5.wifi { # Captive Portal bypass
+	hardware ethernet 98:01:a7:94:d5:41;
+	fixed-address 10.0.15.192;
+}
+
+host C02RRHEMFVH5 { # Captive Portal bypass
+	hardware ethernet a8:60:b6:28:1f:ba;
+	fixed-address 10.0.15.193;
+}
+
+host C02MPE9HFH00 { # Captive Portal bypass
+	hardware ethernet 3c:15:c2:d0:aa:56;
+	fixed-address 10.0.15.194;
+}
+
+host C02RRCWCFVH5.eth { # Captive Portal bypass
+        hardware ethernet ac:7f:3e:e6:8b:af;
+        fixed-address 10.0.15.195;
+}
+
+host W89123S47WU { # Captive Portal bypass
+	hardware ethernet 00:25:00:3e:c1:cc;
+	fixed-address 10.0.15.196;
+}
+
+host C02MPGZ5FH00 { # Captive Portal bypass
+	hardware ethernet 3c:15:c2:d0:ed:c6;
+	fixed-address 10.0.15.197;
+}
+
+host D25N42EVF8J7 { # Captive Portal bypass
+	hardware ethernet 0c:4d:e9:a4:54:42;
+	fixed-address 10.0.15.198;
+}
+
+host C02MPH1GFH00 { # Captive Portal bypass
+	hardware ethernet 3c:15:c2:d0:f3:78;
+	fixed-address 10.0.15.203;
+}
+
+host C02LX120FH03 { # Captive Portal bypass
+        hardware ethernet 60:03:08:9e:14:b6;
+        fixed-address 10.0.15.204;
+}
+
+host C02PQCBNFVH5 { # Social Media bypass
+	hardware ethernet a4:5e:60:e5:00:85;
+	fixed-address 10.0.25.207;
+}
+
+host C02MPDAWFH00 { # Technology reserved
+	hardware ethernet 18:65:90:e1:3b:03;
+	fixed-address 10.0.15.240;
+}
+
+host C02FL3E8DHJF { # Jonathan Win8 Dev
+	hardware ethernet e4:ce:8f:54:11:e1;
+	fixed-address 10.0.15.249;
+}
+
+host C02PQ02PFY6F { # Jonathan iMac
+	hardware ethernet ac:87:a3:0f:1e:65;
+	fixed-address 10.0.15.250;
+}
+
+host ayiana { # Jonathan reserved
+	hardware ethernet 00:0c:29:1a:4e:cc;
+	fixed-address 10.0.15.252;
+}
+
+host melia { # Jonathan reserved
+	hardware ethernet 00:0c:29:b3:41:6f;
+	fixed-address 10.0.15.253;
+}
+
+
+#
+# End of /etc/dhcp/dhcpd.west
+#

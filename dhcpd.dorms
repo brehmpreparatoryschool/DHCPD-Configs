@@ -1,0 +1,107 @@
+#
+# Dorms network
+#
+subnet 10.0.14.0 netmask 255.255.255.0 {
+        authoritative;
+        option routers 10.0.14.1;
+        option subnet-mask 255.255.255.0;
+        option domain-name-servers 10.0.65.20;
+        pool {
+                failover peer "dhcp-failover";
+                default-lease-time 3600;
+                max-lease-time 3600;                
+                range 10.0.14.100 10.0.14.207;
+        }
+}
+
+#
+# Put static reservations here
+#
+host mr16-dorm-5-lounge-00180a38a240 { # Meraki AP
+	hardware ethernet 00:18:0a:38:a2:40;
+	fixed-address 10.0.14.28;
+}
+
+host mr16-dorm-1-west-temp-00180a83e8fc { # Meraki AP
+	hardware ethernet 00:18:0a:83:e8:fc;
+	fixed-address 10.0.14.29;
+}
+
+host mr16-dorm-1-east-00180a824790 { # Meraki AP
+	hardware ethernet 00:18:0a:82:47:90;
+	fixed-address 10.0.14.31;
+}
+
+host alpha-n-00180a38a64a { # Meraki AP
+	hardware ethernet 00:18:0a:38:a6:4a;
+	fixed-address 10.0.14.32;
+}
+
+host mr16-dorm-2-00180a824fbe { # Meraki AP
+	hardware ethernet 00:18:0a:82:4f:be;
+	fixed-address 10.0.14.33;
+}
+
+host mr16-dorm-3-west-00180a3855d8 { # Meraki AP
+	hardware ethernet 00:18:0a:38:55:d8;
+	fixed-address 10.0.14.34;
+}
+
+host m00180a848bf8 { # Meraki AP
+	hardware ethernet 00:18:0a:84:8b:f8;
+	fixed-address 10.0.14.35;
+}
+
+host mr16-dorm-4-east-00180a38a210 { # Meraki AP
+	hardware ethernet 00:18:0a:38:a2:10;
+	fixed-address 10.0.14.36;
+}
+
+host mr16-dorm-4-west-00180a38a23a { # Meraki AP
+	hardware ethernet 00:18:0a:38:a2:3a;
+	fixed-address 10.0.14.37;
+}
+
+host mr16-dorm-5-east-00180a38a248 { # Meraki AP
+	hardware ethernet 00:18:0a:38:a2:48;
+	fixed-address 10.0.14.38;
+}
+
+host mr16-dorm-5-west-00180a38a23c { # Meraki AP
+	hardware ethernet 00:18:0a:38:a2:3c;
+	fixed-address 10.0.14.39;
+}
+
+host Dorm1ChromeBox {
+	hardware ethernet 44:6d:57:7e:3d:cd;
+	fixed-address 10.0.14.211;
+}
+
+host Dorm2ChromeBox {
+	hardware ethernet 44:6d:57:7e:3e:ae;
+	fixed-address 10.0.14.212;
+}
+
+host Dorm3ChromeBox {
+	hardware ethernet 74:e5:43:a2:90:c3;
+	fixed-address 10.0.14.213;
+}
+
+host Dorm4ChromeBox {
+	hardware ethernet e8:03:9a:ac:28:79;
+	fixed-address 10.0.14.214;
+}
+
+host Dorm5ChromeBox {
+	hardware ethernet 44:6d:57:7e:3d:cb;
+	fixed-address 10.0.14.215;
+}
+
+host AlphaN_Chromebook {
+	hardware ethernet 74:c6:3b:2b:34:89;
+	fixed-address 10.0.14.210;
+}
+
+#
+# End of /etc/dhcp/dhcpd.dorms
+#

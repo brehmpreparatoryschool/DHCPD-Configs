@@ -1,0 +1,128 @@
+#
+# Declaration of the server network
+# 	Required for DHCP to even listen on its interface address
+#
+subnet 10.0.64.0 netmask 255.255.254.0 {
+	authoritative;
+	option routers 10.0.64.1;
+	option subnet-mask 255.255.254.0;
+	option domain-name-servers 10.0.65.20;
+	pool {
+		failover peer "dhcp-failover";
+                default-lease-time 3600;
+                max-lease-time 3600;                
+		range 10.0.64.204 10.0.64.253;
+	}
+}
+
+#
+# Declare static reservations here
+#
+host watchdog { # IT Watchdog 100
+	hardware ethernet 00:04:a3:f2:52:0b;
+	fixed-address 10.0.64.69;
+}
+
+host facilities-helpdesk {
+	hardware ethernet 00:0c:29:db:b1:f1;
+	fixed-address 10.0.64.101;
+}
+
+host C02MPDAWFH00.sv { # David's laptop
+	hardware ethernet 10:dd:b1:dd:ef:6f;
+	fixed-address 10.0.64.110;
+}
+
+host spiceworks { # IST Help Desk
+	hardware ethernet 00:0c:29:94:2a:03;
+	fixed-address 10.0.64.113;
+}
+
+host netmon { # Nagios/MRTG
+	hardware ethernet 00:50:56:8e:8d:c5;
+	fixed-address 10.0.64.122;
+}
+
+host Win81-SkNet { # SkNet Exterior Doors
+	hardware ethernet 00:50:56:8d:2f:22;
+	fixed-address 10.0.64.156;
+}
+
+host Win71-QB-COO { # QB Client
+	hardware ethernet 00:50:56:8e:b4:26;
+	fixed-address 10.0.64.166;
+}
+
+host Win71-QB-CFO { # QB Client
+	hardware ethernet 00:50:56:8e:c7:29;
+	fixed-address 10.0.64.167;
+}
+
+host Win71-BASC { # BASC Testing
+	hardware ethernet 00:50:56:8e:f4:2d;
+	fixed-address 10.0.64.168;
+}
+
+host Win81-HR { # HR machine for background checks
+	hardware ethernet 00:50:56:8e:da:5b;
+	fixed-address 10.0.64.169;
+}
+
+host Win71-QB-Bmgr { # QB Client
+	hardware ethernet 00:50:56:8e:76:50;
+	fixed-address 10.0.64.173;
+}
+
+host Win71-QB-BSFoff { # QB Client
+	hardware ethernet 00:50:56:8e:71:e0;
+	fixed-address 10.0.64.174;
+}
+
+host Win71-QB-IT { # IT Test Machine
+	hardware ethernet 00:50:56:8e:52:38;
+	fixed-address 10.0.64.175;
+}
+
+host Win71-QB-BFA1 { # QB Client
+	hardware ethernet 00:50:56:8e:e3:ac;
+	fixed-address 10.0.64.176;
+}
+
+host Win71-QB-BFA2 { # QB Client
+	hardware ethernet 00:50:56:8e:f5:ee;
+	fixed-address 10.0.64.177;
+}
+
+host imagemaster { # Imagr
+	hardware ethernet 00:50:56:8e:e2:92;
+	fixed-address 10.0.64.187;
+}
+
+host Win7-XDA-Agent { # Xerox Device Agent -- shutdown
+	hardware ethernet 00:50:56:8e:5c:c0;
+	fixed-address 10.0.64.194;
+}
+
+host puppet { # Puppet server dev -- verify continued use
+	hardware ethernet 00:50:56:8e:ee:05;
+	fixed-address 10.0.64.203;
+}
+
+host software { # Munki server
+	hardware ethernet 00:50:56:8e:04:aa;
+	fixed-address 10.0.65.80;
+}
+
+host asus { # Apple Update Server
+	hardware ethernet 00:50:56:8d:1f:22;
+	fixed-address 10.0.65.82;
+}
+
+host filewave {
+	hardware ethernet 00:50:56:8e:16:e1;
+	fixed-address 10.0.65.85;
+}
+
+#
+# End of /etc/dhcp/dhcpd.servers
+#

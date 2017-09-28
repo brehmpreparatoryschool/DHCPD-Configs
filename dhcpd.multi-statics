@@ -1,0 +1,88 @@
+#
+# Host declarations for static IPs in different networks
+#
+host C02RRGYNFVH5 { # Captive Portal bypass
+        hardware ethernet 98:01:a7:98:02:bb;
+        fixed-address 10.0.12.201, 10.0.15.199, 10.0.16.199 ;
+
+}
+
+host C02RRGZYFVH5 { # Captive Portal bypass
+        hardware ethernet 98:01:a7:98:07:73;
+        fixed-address 10.0.12.202, 10.0.15.200, 10.0.16.200;
+}
+
+host C02MPH1MFH00 { # Captive Portal bypass
+        hardware ethernet 3c:15:c2:d0:d6:6c;
+        fixed-address 10.0.12.203, 10.0.15.201, 10.0.16.201;
+}
+
+host C02HX37WDKQ4 { # Jonathan reserved
+        hardware ethernet b8:f6:b1:19:4d:df;
+        fixed-address 10.0.13.250, 10.0.17.250;
+}
+
+#
+# This section is Static Reservations for Highly Restrictive Acces
+# Used for Student Disciplinary needs
+# Edit host name and hardware ethernet address for each assignment block
+#
+host ABCDEF12345 { # x.216
+	hardware ethernet aa:bb:cc:dd:ee:ff;
+	fixed-address 10.0.10.216, 10.0.11.216, 10.0.12.216, 10.0.13.216,
+		      10.0.14.216, 10.0.15.216, 10.0.16.216, 10.0.17.216,
+		      10.0.18.216, 10.0.19.216;
+}
+
+host BCDEFA23451 { # x.217
+	hardware ethernet bb:cc:dd:ee:ff:aa;
+	fixed-address 10.0.10.217, 10.0.11.217, 10.0.12.217, 10.0.13.217,
+		      10.0.14.217, 10.0.15.217, 10.0.16.217, 10.0.17.217,
+		      10.0.18.217, 10.0.19.217;
+}
+
+host CDEFAB34512 { # x.218
+	hardware ethernet cc:dd:ee:ff:aa:bb;
+	fixed-address 10.0.10.218, 10.0.11.218, 10.0.12.218, 10.0.13.218,
+		      10.0.14.218, 10.0.15.218, 10.0.16.218, 10.0.17.218,
+		      10.0.18.218, 10.0.19.218;
+}
+
+host DEFABC45123 { # x.219
+	hardware ethernet dd:ee:ff:aa:bb:cc;
+	fixed-address 10.0.10.219, 10.0.11.219, 10.0.12.219, 10.0.13.219,
+		      10.0.14.219, 10.0.15.219, 10.0.16.219, 10.0.17.219,
+		      10.0.18.219, 10.0.19.219;
+}
+
+host EFABCD51234 { # x.220
+	hardware ethernet ee:ff:aa:bb:cc:dd;
+	fixed-address 10.0.10.220, 10.0.11.220, 10.0.12.220, 10.0.13.220,
+		      10.0.14.220, 10.0.15.220, 10.0.16.220, 10.0.17.220,
+		      10.0.18.220, 10.0.19.220;
+}
+
+host FABCDE12345 { # x.221
+	hardware ethernet ff:aa:bb:cc:dd:ee;
+	fixed-address 10.0.10.221, 10.0.11.221, 10.0.12.221, 10.0.13.221,
+		      10.0.14.221, 10.0.15.221, 10.0.16.221, 10.0.17.221,
+		      10.0.18.221, 10.0.19.221;
+}
+
+host ABCDEF23456 { # x.222
+	hardware ethernet aa:bb:cc:dd:11:22;
+	fixed-address 10.0.10.222, 10.0.11.222, 10.0.12.222, 10.0.13.222,
+		      10.0.14.222, 10.0.15.222, 10.0.16.222, 10.0.17.222,
+		      10.0.18.222, 10.0.19.222;
+}
+
+host BCDEFA34562 { # x.223
+	hardware ethernet bb:cc:dd:11:22:aa;
+	fixed-address 10.0.10.223, 10.0.11.223, 10.0.12.223, 10.0.13.223,
+		      10.0.14.223, 10.0.15.223, 10.0.16.223, 10.0.17.223,
+		      10.0.18.223, 10.0.19.223;
+}
+
+#
+# End of /etc/dhcp/dhcpd.multi-statics
+#

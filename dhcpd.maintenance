@@ -1,0 +1,37 @@
+#
+# Ennis Crosby network
+#
+subnet 10.0.10.0 netmask 255.255.255.0 {
+	authoritative;
+	option routers 10.0.10.1;
+	option subnet-mask 255.255.255.0;
+	option domain-name-servers 10.0.65.20;
+	pool {
+		failover peer "dhcp-failover";
+		default-lease-time 3600;
+		max-lease-time 3600;
+		range 10.0.10.104 10.0.10.159;
+	}
+}
+
+#
+# Put static reservations here
+#
+host maintenance-00180a388952 { # Meraki AP
+	hardware ethernet 00:18:0a:38:89:52;
+	fixed-address 10.0.10.22;
+}
+
+host DumpsterCamera { # IP Camera
+	hardware ethernet 00:02:d1:12:af:fc;
+	fixed-address 10.0.10.103;
+}
+
+host C02FT6VXDHJF { # Captive Portal Bypass
+	hardware ethernet c8:2a:14:35:3a:c1;
+	fixed-address 10.0.10.193;
+}
+
+#
+# End of /etc/dhcp/dhcpd.maintenance
+#

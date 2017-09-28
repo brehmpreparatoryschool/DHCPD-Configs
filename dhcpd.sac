@@ -1,0 +1,82 @@
+#
+# SAC network
+#
+subnet 10.0.17.0 netmask 255.255.255.0 {
+        authoritative;
+        option routers 10.0.17.1;
+        option subnet-mask 255.255.255.0;
+        option domain-name-servers 10.0.65.20;
+        pool {
+                failover peer "dhcp-failover";
+                default-lease-time 3600;
+                max-lease-time 3600;                
+                range 10.0.17.100 10.0.17.207;
+        }
+}
+
+#
+# Put static reservations here
+#
+host sac-dining-hall-av-room-00180a381caa { # Meraki AP
+	hardware ethernet 00:18:0a:38:1c:aa;
+	fixed-address 10.0.17.23;
+}
+
+host sac-gym-00180a38a26c { # Meraki AP
+	hardware ethernet 00:18:0a:38:a2:6c;
+	fixed-address 10.0.17.24;
+}
+
+host sac-gym-west-wall-00180a7a5529 { # Meraki AP
+	hardware ethernet 00:18:0a:7a:55:29;
+	fixed-address 10.0.17.25;
+}
+
+host mr18-sac-student-store-00180a7a52ba { # Meraki AP
+	hardware ethernet 00:18:0a:7a:52:ba;
+	fixed-address 10.0.17.26;
+}
+
+host mr26-sac-dining-hall-west-00180a6b1c70 { # Meraki AP
+	hardware ethernet 00:18:0a:6b:1c:70;
+	fixed-address 10.0.17.27;
+}
+
+host XRX9C934E22470A { # Xerox Phasor 3300
+	hardware ethernet 9c:93:4e:22:47:0a;
+	fixed-address 10.0.17.95;
+}
+
+host ADP2062 { # ADP kiosk
+	hardware ethernet 30:10:e4:7a:b3:cc;
+	fixed-address 10.0.17.208;
+}
+
+host C07DF02UDD6N { # Captive Portal bypass
+	hardware ethernet 60:33:4b:15:3a:8a;
+	fixed-address 10.0.17.209;
+}
+
+host W89121XP7WU { # Captive Portal bypass
+	hardware ethernet 00:25:00:a7:a5:7e;
+	fixed-address 10.0.17.210;
+}
+
+host C17FP33BDHJF { # Social Media bypass
+	hardware ethernet ac:71:3e:e6:8b:c5;
+	fixed-address 10.0.17.224;
+}
+
+host SACDiningHall-Apple-TV {
+	hardware ethernet 68:64:4b:39:79:2a;
+	fixed-address 10.0.17.230;
+}
+
+host Apple-TV-2 {
+	hardware ethernet b8:78:2e:54:05:75;
+	fixed-address 10.0.17.231;
+}
+
+#
+# End of /etc/dhcp/dhcpd.sac
+#

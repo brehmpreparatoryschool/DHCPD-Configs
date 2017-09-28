@@ -1,0 +1,41 @@
+#####
+#
+# Master DHCP Configuration file for brehm.private networks
+#
+# Declared in this file is config global to all networks
+# and includes for config to each network
+#
+#####
+
+#
+# Polycom Phones DHCP options
+#
+option boot-server-name code 160 = string; # for Polycom Phones
+class "polycom-phones" {
+    match if (option vendor-class-identifier = "Polycom-SPIP335" or
+              option vendor-class-identifier = "Polycom-SPIP650");
+    option tftp-server-name "ftp://10.0.65.40";
+    option boot-server-name "http://10.0.65.40/pc";
+}
+
+#
+# Include files for each network
+#
+
+include "/etc/dhcp/dhcpd.servers";
+
+include "/etc/dhcp/dhcpd.christie";
+include "/etc/dhcp/dhcpd.patton";
+include "/etc/dhcp/dhcpd.admin1";
+include "/etc/dhcp/dhcpd.dorms";
+include "/etc/dhcp/dhcpd.west";
+include "/etc/dhcp/dhcpd.east";
+include "/etc/dhcp/dhcpd.sac";
+include "/etc/dhcp/dhcpd.admin2";
+include "/etc/dhcp/dhcpd.nursing";
+include "/etc/dhcp/dhcpd.maintenance";
+include "/etc/dhcp/dhcpd.multi-statics";
+
+#
+# End of /etc/dhcp/dhcpd.master
+#
