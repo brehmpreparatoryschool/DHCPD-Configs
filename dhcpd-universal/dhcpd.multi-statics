@@ -27,6 +27,8 @@ host C02HX37WDKQ4 { # Jonathan reserved
 # Used for Student Disciplinary needs
 # Edit host name and hardware ethernet address for each assignment block
 #
+# We'll start here:
+#
 host ABCDEF12345 { # x.216
 	hardware ethernet aa:bb:cc:dd:ee:ff;
 	fixed-address 10.0.10.216, 10.0.11.216, 10.0.12.216, 10.0.13.216,
