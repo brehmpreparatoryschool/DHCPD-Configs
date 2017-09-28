@@ -1,0 +1,19 @@
+#####
+#
+# Configuration for DHCP failover for the secondary server
+#
+#####
+
+failover peer "dhcp-failover" {
+	secondary;
+#	address			dhcp2.brehm.private;
+	address			10.0.65.103;
+	port				647;
+#	peer address		dhcp1.brehm.private;
+	peer address		10.0.65.102;
+	peer port			647;
+	max-response-delay	30;
+	max-unacked-updates	10;
+	load balance max seconds	3;
+}
+
