@@ -74,7 +74,7 @@ host C02LX120FH03 { # Captive Portal bypass
 
 host C02PQCBNFVH5 { # Social Media bypass
 	hardware ethernet a4:5e:60:e5:00:85;
-	fixed-address 10.0.25.207;
+	fixed-address 10.0.15.207;
 }
 
 host C02MPDAWFH00 { # Technology reserved
