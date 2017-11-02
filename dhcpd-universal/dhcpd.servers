@@ -38,6 +38,11 @@ host spiceworks { # IST Help Desk
 	fixed-address 10.0.64.113;
 }
 
+host C02MQ07AFD58 { # Jamie's Thunderbolt Display
+	hardware ethernet 10:dd:b1:db:dd:1e;
+	fixed-address 10.0.64.114;
+}
+
 host netmon { # Nagios/MRTG
 	hardware ethernet 00:50:56:8e:8d:c5;
 	fixed-address 10.0.64.122;
