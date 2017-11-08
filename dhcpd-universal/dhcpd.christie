@@ -52,6 +52,11 @@ host ADP2133 { # Captive Portal bypass -- ADP kiosk
 	fixed-address 10.0.11.197;
 }
 
+host LaNealChromeBox { # Captive Portal bypass
+	hardware ethernet 44:6d:57:7e:3d:cb;
+	fixed-address 10.0.11.198;
+}
+
 host C02TW8Z1HV2D { # Social Media bypass
 	hardware ethernet 8c:85:90:01:a6:da;
 	fixed-address 10.0.11.224;
