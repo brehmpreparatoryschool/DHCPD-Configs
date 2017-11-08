@@ -104,7 +104,7 @@ host AlphaN_Chromebook {
 
 host D25V80E8H7VF { # Dorm 5 iMac with Captive Portal bypass
 	hardware ethernet 98:9e:63:25:24:b2;
-	fixed-address 10.0.14.228:
+	fixed-address 10.0.14.228;
 }
 
 #
