@@ -102,6 +102,11 @@ host AlphaN_Chromebook {
 	fixed-address 10.0.14.210;
 }
 
+host D25V80E8H7VF { # Dorm 5 iMac with Captive Portal bypass
+	hardware ethernet 98:9e:63:25:24:b2;
+	fixed-address 10.0.14.228:
+}
+
 #
 # End of /etc/dhcp/dhcpd.dorms
 #
