@@ -92,8 +92,8 @@ host Dorm4ChromeBox {
 	fixed-address 10.0.14.214;
 }
 
-host Dorm5ChromeBox {
-	hardware ethernet 44:6d:57:7e:3d:cb;
+host Dorm5ChromeBook { # with Captive Portal bypass
+	hardware ethernet c8:21:58:2b:d4:e6;
 	fixed-address 10.0.14.215;
 }
 
