@@ -107,6 +107,22 @@ host D25HV2CSDHJR { # Dorm 1 iMac with Captive Portal bypass
 	fixed-address 10.0.14.224;
 }
 
+host D25V80EMH7VF { # Dorm 2 iMac with Captive Portal bypass
+	hardware ethernet 58:40:4e:ed:23:b6;
+	fixed-address 10.0.14.225;
+}
+
+host D25V80EHH7VF { # Dorm 3 iMac with Captive Portal bypass
+	hardware ethernet 58:40:4e:ed:63:c2;
+	fixed-address 10.0.14.226;
+
+}
+
+host D25V80DYH7VF { # Dorm 4 iMac with Captive Portal bypass
+	hardware ethernet 98:9e:63:25:26:c0;
+	fixed-address 10.0.14.227;
+}
+
 host D25V80E8H7VF { # Dorm 5 iMac with Captive Portal bypass
 	hardware ethernet 98:9e:63:25:24:b2;
 	fixed-address 10.0.14.228;
