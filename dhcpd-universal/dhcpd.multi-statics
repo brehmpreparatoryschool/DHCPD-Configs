@@ -29,8 +29,8 @@ host C02HX37WDKQ4 { # Jonathan reserved
 #
 # We'll start here:
 #
-host C02HR0HNDJWT { # x.216
-	hardware ethernet 70:56:81:a5:52:9d;
+host ABCDEF12345 { # x.216
+	hardware ethernet aa:bb:cc:dd:ee:ff;
 	fixed-address 10.0.10.216, 10.0.11.216, 10.0.12.216, 10.0.13.216,
 		      10.0.14.216, 10.0.15.216, 10.0.16.216, 10.0.17.216,
 		      10.0.18.216, 10.0.19.216;
