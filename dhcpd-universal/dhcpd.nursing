@@ -52,6 +52,11 @@ host BT02363 { # Nursing Chromebook
 	fixed-address 10.0.19.195;
 }
 
+host C02TW297H7VF {
+	hardware ethernet 98:10:e8:f1:f8:f2;
+	fixed-address 10.0.19.196;
+}
+
 host C02MPFFBFH00 { # Social Media bypass
 	hardware ethernet d8:30:62:a6:1f:a5;
 	fixed-address 10.0.19.224;
