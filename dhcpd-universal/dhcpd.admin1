@@ -54,7 +54,7 @@ host QP0060T6B9S { # Captive Portal bypass
 
 host C02MPFBQFH00 { # Captive Portal bypass
 	hardware ethernet 3c:15:c2:d0:df:a8;
-	fixed-address 10.0.18.198;
+	fixed-address 10.0.13.198;
 }
 
 host D25HV2DUDHJR { # Captive Portal bypass
