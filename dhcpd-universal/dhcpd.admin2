@@ -28,7 +28,7 @@ host admin-2-west-00180a38a20e { # Meraki AP
 }
 
 host Admin-2-Parking-Camera {
-	hardware ethernet 00:02:d1:12:af:fd;
+	hardware ethernet 00:02:d1:12:af:fc;
 	fixed-address 10.0.18.102;
 }
 
