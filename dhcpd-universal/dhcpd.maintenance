@@ -22,6 +22,11 @@ host maintenance-00180a388952 { # Meraki AP
 	fixed-address 10.0.10.22;
 }
 
+host DumpsterCamera {
+	hardware ethernet 3c:ef:8c:73:ee:b2;
+	fixed-address 10.0.10.103;
+}
+
 host C02FT6VXDHJF { # Captive Portal Bypass
 	hardware ethernet c8:2a:14:35:3a:c1;
 	fixed-address 10.0.10.193;
