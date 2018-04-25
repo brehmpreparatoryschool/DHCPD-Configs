@@ -19,7 +19,9 @@ host C02MPH1MFH00 { # Captive Portal bypass
 
 host C02HX37WDKQ4 { # Jonathan reserved
         hardware ethernet b8:f6:b1:19:4d:df;
-        fixed-address 10.0.13.250, 10.0.17.250;
+        fixed-address 10.0.10.252, 10.0.11.252, 10.0.12.252, 10.0.13.252,
+                      10.0.14.252, 10.0.15.252, 10.0.16.252, 10.0.17.250,
+                      10.0.18.252, 10.0.19.252;
 }
 
 #
