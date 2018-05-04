@@ -62,11 +62,6 @@ host C02MPFFBFH00 { # Social Media bypass
 	fixed-address 10.0.19.224;
 }
 
-host F5KN7023F9VN { # Social Media bypass
-	hardware ethernet 0c:4d:e9:b5:52:63;
-	fixed-address 10.0.19.225;
-}
-
 
 #
 # End of /etc/dhcp/dhcpd.nursing
