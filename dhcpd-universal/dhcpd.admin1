@@ -32,9 +32,9 @@ host Printer-Admin7830 { # Main Admin Xerox
 	fixed-address 10.0.13.91;
 }
 
-host D25HV2CTDHJR { # Captive Portal bypass
+host D25HV2CTDHJR { # Social Media Bypass
 	hardware ethernet 40:6c:8f:2d:c1:db;
-	fixed-address 10.0.13.192;
+	fixed-address 10.0.13.235;
 }
 
 host C02FL3AHDHJF { # Captive Portal bypass
