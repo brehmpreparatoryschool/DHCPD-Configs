@@ -77,6 +77,11 @@ host Apple-TV-2 {
 	fixed-address 10.0.17.231;
 }
 
+host F5KN7023F9VN { # Jonathan desktop
+	hardware ethernet 00:3e:e1:c2:2f:a2;
+	fixed-address 10.0.17.250;
+}
+
 #
 # End of /etc/dhcp/dhcpd.sac
 #
