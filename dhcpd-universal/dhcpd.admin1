@@ -47,6 +47,11 @@ host D25P608JF8J9 { # Captive Portal bypass
 	fixed-address 10.0.13.194;
 }
 
+host D25N103NF8J7 { # Captive Portal bypass
+	hardware ethernet 0c:4d:e9:9e:3c:49;
+	fixed-address 10.0.13.197;
+}
+
 host D25HV2DUDHJR { # Captive Portal bypass
 	hardware ethernet 7c:c3:a1:b0:ee:56;
 	fixed-address 10.0.13.199;
