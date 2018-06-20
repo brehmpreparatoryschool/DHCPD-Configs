@@ -32,8 +32,8 @@ host Printer-Admin7830 { # Main Admin Xerox
 	fixed-address 10.0.13.91;
 }
 
-host D25HV2CTDHJR { # Social Media Bypass
-	hardware ethernet 40:6c:8f:2d:c1:db;
+host C02KV14YDNCR { # Social Media Bypass
+	hardware ethernet 10:dd:b1:cd:81:c6;
 	fixed-address 10.0.13.235;
 }
 
