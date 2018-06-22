@@ -57,11 +57,6 @@ host C02TW297H7VF {
 	fixed-address 10.0.19.196;
 }
 
-host C02MPFFBFH00 { # Social Media bypass
-	hardware ethernet d8:30:62:a6:1f:a5;
-	fixed-address 10.0.19.224;
-}
-
 
 #
 # End of /etc/dhcp/dhcpd.nursing
