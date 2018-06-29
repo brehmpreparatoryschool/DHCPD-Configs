@@ -68,7 +68,7 @@ host C02RN0PJGG7L { # Social Media bypass
 }
 
 host C02NV6DYG3QC { # Social Media bypass
-	hardware ethernet ac:87:a3:1f:d9:1b;
+	hardware ethernet 60:f8:1d:bc:cd:96;
 	fixed-address 10.0.13.228;
 }
 
