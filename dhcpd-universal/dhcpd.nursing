@@ -27,11 +27,6 @@ host mr18-nursing-se-00180a7f3ccf { # Meraki AP
 	fixed-address 10.0.19.22;
 }
 
-host BICCRWorkCentre8505 { # BICCR Printer
-	hardware ethernet 9c:93:4e:2c:96:47;
-	fixed-address 10.0.19.92;
-}
-
 host C02MPH17FH00 { # Captive Portal bypass
 	hardware ethernet 3c:15:c2:d0:ec:4c;
 	fixed-address 10.0.19.192;
