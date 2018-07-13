@@ -76,6 +76,67 @@ host C02PQCBNFVH5 { # Social Media bypass
 	hardware ethernet a4:5e:60:e5:00:85;
 	fixed-address 10.0.15.207;
 }
+#+++++++
+#
+#  Captive Portal bypass for Brehm Arrowsmith
+#
+host C17KF4XNDNCR {
+	hardware ethernet ec:35:86:3c:66:24;
+	fixed-address 10.0.15.226;
+}
+
+host C17K46SVDNCR {
+	hardware ethernet 8c:2d:aa:51:83:f5;
+	fixed-address 10.0.15.227;
+}
+
+host C17KF2N4DNCR {
+	hardware ethernet ec:35:86:3b:d9:28;
+	fixed-address 10.0.15.228;
+}
+
+host C02KN7BWDNCR {
+	hardware ethernet ec:35:86:4e:76:b8;
+	fixed-address 10.0.15.229;
+}
+
+host C02KFXZBDNCR {
+	hardware ethernet ec:35:86:3e:98:fa;
+	fixed-address 10.0.15.230;
+}
+
+host C02K4NK4DNCR {
+	hardware ethernet 8c:2d:aa:4d:b6:8b;
+	fixed-address 10.0.15.231;
+}
+
+host C02K4SEDDNCR {
+	hardware ethernet 8c:2d:aa:4e:8f:bd;
+	fixed-address 10.0.15.232;
+}
+
+host C02KP10GDNCR {
+	hardware ethernet ec:35:86:4a:6b:bc;
+	fixed-address 10.0.15.233;
+}
+
+host D25N103KF8J7 {
+	hardware ethernet 88:63:df:95:8a:d3;
+	fixed-address 10.0.15.235;
+}
+
+host D25N103QF8J7 {
+	hardware ethernet 88:63:df:95:54:b7;
+	fixed-address 10.0.15.237;
+}
+
+host D25N103JF8J7 {
+	hardware ethernet 88:63:df:95:05:6b;
+	fixed-address 10.0.15.238;
+}
+
+
+#-------
 
 host C02MPDAWFH00 { # Technology reserved
 	hardware ethernet 18:65:90:e1:3b:03;
