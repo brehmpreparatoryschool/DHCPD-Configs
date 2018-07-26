@@ -82,16 +82,6 @@ host OPT-AS-2267 { # Captive Portal bypass
 	fixed-address 10.0.18.215;
 }
 
-host C02TX1ECHV2D { # Social Media bypass
-	hardware ethernet 8c:85:90:02:8d:b2;
-	fixed-address 10.0.18.224;
-}
-
-host C02FT6YLDHJF { # Social Media bypass
-	hardware ethernet c8:2a:14:3b:40:eb;
-	fixed-address 10.0.18.225;
-}
-
 host C02MPDFSFH00 { # Social Media bypass
 	hardware ethernet 3c:15:c2:d2:c3:22;
 	fixed-address 10.0.18.226;

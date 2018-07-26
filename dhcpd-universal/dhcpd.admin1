@@ -57,6 +57,11 @@ host D25HV2DUDHJR { # Captive Portal bypass
 	fixed-address 10.0.13.199;
 }
 
+host C02TX1K0HV2D { # Social Media bypass
+	hardware ethernet 00:50:b6:8a:c8:c3;
+	fixed-address 10.0.13.224;
+}
+
 host C02PV289G8WM { # Social Media bypass
 	hardware ethernet ac:87:a3:1f:d9:1b;
 	fixed-address 10.0.13.225;
@@ -65,6 +70,11 @@ host C02PV289G8WM { # Social Media bypass
 host C02RN0PJGG7L { # Social Media bypass
 	hardware ethernet 38:c9:86:50:21:64;
 	fixed-address 10.0.13.226;
+}
+
+host C02FT6YLDHJF { # Social Media bypass
+        hardware ethernet c8:2a:14:3b:40:eb;
+        fixed-address 10.0.13.227;
 }
 
 host C02NV6DYG3QC { # Social Media bypass
