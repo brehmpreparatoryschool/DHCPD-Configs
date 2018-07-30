@@ -53,7 +53,7 @@ host D25N103NF8J7 { # Captive Portal bypass
 }
 
 host D25HV2DUDHJR { # Captive Portal bypass
-	hardware ethernet 7c:c3:a1:b0:ee:56;
+	hardware ethernet 40:6c:8f:2f:2a:29;
 	fixed-address 10.0.13.199;
 }
 
