@@ -57,11 +57,6 @@ host W89123S47WU { # Captive Portal bypass
 	fixed-address 10.0.15.196;
 }
 
-host D25N42EVF8J7 { # Captive Portal bypass
-	hardware ethernet 0c:4d:e9:a4:54:42;
-	fixed-address 10.0.15.198;
-}
-
 host C02MPH1GFH00 { # Captive Portal bypass
 	hardware ethernet 3c:15:c2:d0:f3:78;
 	fixed-address 10.0.15.203;
