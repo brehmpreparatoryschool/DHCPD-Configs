@@ -27,11 +27,6 @@ host christiehall-south-00180a83ea66 { # Meraki AP
 	fixed-address 10.0.11.22;
 }
 
-host D25HV27FDHJR { # Captive Portal bypass
-	hardware ethernet 40:6c:8f:2b:bc:f4;
-	fixed-address 10.0.11.193;
-}
-
 host C02MPE9UFH00 { # Captive Portal bypass
 	hardware ethernet 3c:15:c2:d0:c2:1c;
 	fixed-address 10.0.11.194;
