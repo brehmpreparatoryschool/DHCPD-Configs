@@ -92,8 +92,8 @@ host BPS-AS-2465 { # Captive Portal bypass
 	fixed-address 10.0.12.212;
 }
 
-host C02TX0MCHV2D { # Social Media bypass
-	hardware ethernet dc:a9:04:91:68:4c;
+host C02PQCBNFVH5 { # Social Media bypass
+	hardware ethernet a4:5e:60:e5:00:85;
 	fixed-address 10.0.12.224;
 }
 

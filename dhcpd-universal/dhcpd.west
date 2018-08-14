@@ -67,10 +67,6 @@ host C02LX120FH03 { # Captive Portal bypass
         fixed-address 10.0.15.204;
 }
 
-host C02PQCBNFVH5 { # Social Media bypass
-	hardware ethernet a4:5e:60:e5:00:85;
-	fixed-address 10.0.15.207;
-}
 #+++++++
 #
 #  Captive Portal bypass for Brehm Arrowsmith
