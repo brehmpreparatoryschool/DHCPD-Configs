@@ -97,8 +97,8 @@ host C02MPFBQFH00 { # Captive Portal bypass
         fixed-address 10.0.13.231;
 }
 
-host C02T13GDFVH9 { # Social Media bypass
-	hardware ethernet 00:50:b6:de:90:0b;
+host C02T13GDFVH4 { # Social Media bypass
+	hardware ethernet 4c:32:75:9e:5f:79;
 	fixed-address 10.0.13.232;
 }
 
