@@ -37,8 +37,8 @@ host C02MW31UFD59 { # Captive Portal bypass
 	fixed-address 10.0.16.192;
 }
 
-host W891563X8QR { # Captive Portal bypass
-	hardware ethernet 80:e6:50:23:8c:6c;
+host C02FT82YDH2G { # Captive Portal bypass
+	hardware ethernet e4:ce:8f:29:c5:dc;
 	fixed-address 10.0.16.193;
 }
 
@@ -65,6 +65,11 @@ host C02RRCWCFVH5 { # Captive Portal bypass
 host C02PQ9YKFVH5.wired { # Captive Portal Bypass
 	hardware ethernet a8:60:b6:00:7b:5a;
 	fixed-address 10.0.16.203;
+}
+
+host C02TX0MCHV2D { # Social Media Bypass
+	hardware ethernet dc:a9:04:91:68:42;
+	fixed-address 10.0.16.224;
 }
 
 #
