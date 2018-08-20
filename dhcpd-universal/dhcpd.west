@@ -32,8 +32,8 @@ host C02MPH1CFH00 { # Molly Barnes static for LMB
 	fixed-address 10.0.15.158;
 }
 
-host C02RRCWCFVH5.wifi { # Captive Portal bypass
-	hardware ethernet 98:01:a7:94:d5:41;
+host C02MPFECFH00 { # Captive Portal bypass
+	hardware ethernet 3c:15:c2:d0:75:34;
 	fixed-address 10.0.15.192;
 }
 
@@ -47,8 +47,8 @@ host C02MPE9HFH00 { # Captive Portal bypass
 	fixed-address 10.0.15.194;
 }
 
-host C02RRCWCFVH5.eth { # Captive Portal bypass
-        hardware ethernet ac:7f:3e:e6:8b:af;
+host C02HR0N4DJWT { # Captive Portal bypass
+        hardware ethernet 70:56:81:af:d0:d5;
         fixed-address 10.0.15.195;
 }
 

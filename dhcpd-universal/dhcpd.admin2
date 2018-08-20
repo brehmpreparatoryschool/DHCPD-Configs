@@ -32,11 +32,6 @@ host Admin-2-Parking-Camera {
 	fixed-address 10.0.18.102;
 }
 
-host C02MPFFKFH00 { # Captive Portal bypass
-	hardware ethernet 3c:15:c2:d0:c2:fe;
-	fixed-address 10.0.18.194;
-}
-
 host OPT-AS-2269 { # Captive Portal bypass 
 	hardware ethernet 68:49:8a:d8:f4:03;
 	fixed-address 10.0.18.207;
