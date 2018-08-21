@@ -47,8 +47,8 @@ host C02MPE9HFH00 { # Captive Portal bypass
 	fixed-address 10.0.15.194;
 }
 
-host C02HR0N4DJWT { # Captive Portal bypass
-        hardware ethernet 70:56:81:af:d0:d5;
+host C02RRHFRFVH5 { # Captive Portal bypass
+        hardware ethernet 98:01:a7:98:c3:6f;
         fixed-address 10.0.15.195;
 }
 
