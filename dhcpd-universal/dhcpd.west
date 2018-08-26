@@ -116,6 +116,11 @@ host D25N103KF8J7 {
 	fixed-address 10.0.15.235;
 }
 
+host D25N103MF8J7 {
+	hardware ethernet 88:63:df:95:02:37;
+	fixed-address 10.0.15.236;
+}
+
 host D25N103QF8J7 {
 	hardware ethernet 88:63:df:95:54:b7;
 	fixed-address 10.0.15.237;
