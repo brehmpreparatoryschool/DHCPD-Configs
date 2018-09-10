@@ -63,7 +63,7 @@ host C02PQ9YKFVH5.wired { # Captive Portal Bypass
 }
 
 host C02TX0MCHV2D { # Social Media Bypass
-	hardware ethernet dc:a9:04:91:68:42;
+	hardware ethernet dc:a9:04:91:68:4c;
 	fixed-address 10.0.16.224;
 }
 

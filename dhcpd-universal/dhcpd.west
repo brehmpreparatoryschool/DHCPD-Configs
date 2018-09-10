@@ -27,11 +27,6 @@ host mr16-west-academic-west-00180a830c5e { # Meraki AP
 	fixed-address 10.0.15.24;
 }
 
-host C02MPH1CFH00 { # Molly Barnes static for LMB
-	hardware ethernet 3c:15:c2:d0:ec:42;
-	fixed-address 10.0.15.158;
-}
-
 host C02MPFECFH00 { # Captive Portal bypass
 	hardware ethernet 3c:15:c2:d0:75:34;
 	fixed-address 10.0.15.192;
