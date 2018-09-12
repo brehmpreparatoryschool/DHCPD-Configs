@@ -52,8 +52,8 @@ host C02TW297H7VF {
 	fixed-address 10.0.19.196;
 }
 
-host D25HV27FDHJR { # Captive Portal Bypass
-	hardware ethernet 40:6c:8f:2b:bc:f4;
+host C17KFEK1DNCR { # Captive Portal Bypass
+	hardware ethernet 10:dd:b1:bf:1d:a7;
 	fixed-address 10.0.19.197;
 }
 
