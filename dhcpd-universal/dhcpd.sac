@@ -62,8 +62,8 @@ host W89121XP7WU { # Captive Portal bypass
 	fixed-address 10.0.17.210;
 }
 
-host C17FP33BDHJF { # Social Media bypass
-	hardware ethernet ac:71:3e:e6:8b:c5;
+host D25N4283F8J7 { # Social Media bypass
+	hardware ethernet 0c:4d:e9:a4:52:8e;
 	fixed-address 10.0.17.224;
 }
 
