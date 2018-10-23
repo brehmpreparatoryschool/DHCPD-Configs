@@ -27,8 +27,8 @@ host mr18-nursing-se-00180a7f3ccf { # Meraki AP
 	fixed-address 10.0.19.22;
 }
 
-host C02MPH17FH00 { # Captive Portal bypass
-	hardware ethernet 3c:15:c2:d0:ec:4c;
+host C02MPDAWFH00 { # Captive Portal bypass
+	hardware ethernet 3c:15:c2:d2:b6:06;
 	fixed-address 10.0.19.192;
 }
 
