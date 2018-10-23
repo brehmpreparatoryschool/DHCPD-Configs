@@ -28,11 +28,6 @@ host facilities-helpdesk {
 	fixed-address 10.0.64.101;
 }
 
-host C02MPDAWFH00.sv { # David's laptop
-	hardware ethernet 10:dd:b1:dd:ef:6f;
-	fixed-address 10.0.64.110;
-}
-
 host spiceworks { # IST Help Desk
 	hardware ethernet 00:0c:29:94:2a:03;
 	fixed-address 10.0.64.113;
