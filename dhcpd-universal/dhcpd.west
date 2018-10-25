@@ -129,6 +129,11 @@ host D25N103JF8J7 {
 
 #-------
 
+host C02TW0J5G8WL { # David Captive bypass
+	hardware ethernet 18:65:90:e1:3b:03;
+	fixed-address 10.0.15.240;
+}
+
 host C02FL3E8DHJF { # Jonathan Win8 Dev
 	hardware ethernet e4:ce:8f:54:11:e1;
 	fixed-address 10.0.15.249;
