@@ -108,7 +108,10 @@ host C02T13GDFVH4.wired { # Social Media bypass
 ;
 }
 
-
+host C02MPDFSFH00 { # Social Media bypass
+	hardware ethernet 3c:15:c2:d2:c3:22;
+	fixed-address 10.0.13.237;
+}
 
 #
 # End of /etc/dhcp/dhcpd.admin1

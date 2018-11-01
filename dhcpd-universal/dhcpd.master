@@ -31,7 +31,7 @@ include "/etc/dhcp/dhcpd.dorms";
 include "/etc/dhcp/dhcpd.west";
 include "/etc/dhcp/dhcpd.east";
 include "/etc/dhcp/dhcpd.sac";
-include "/etc/dhcp/dhcpd.admin2";
+#include "/etc/dhcp/dhcpd.admin2";
 include "/etc/dhcp/dhcpd.nursing";
 include "/etc/dhcp/dhcpd.maintenance";
 include "/etc/dhcp/dhcpd.multi-statics";
