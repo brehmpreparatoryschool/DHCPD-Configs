@@ -102,6 +102,14 @@ host YM9160E41BV { # Social Media bypass
 	fixed-address 10.0.13.233;
 }
 
+host C02T13GDFVH4.wired { # Social Media bypass
+        hardware ethernet 0c:4d:e9:b5:52:63;
+        fixed-address 10.0.13.234
+;
+}
+
+
+
 #
 # End of /etc/dhcp/dhcpd.admin1
 #
