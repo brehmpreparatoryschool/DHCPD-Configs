@@ -47,8 +47,8 @@ host C02MPH1CFH00.wired { # Molly Barnes wired static for LMB
 	fixed-address 10.0.12.102;
 }
 
-host C02PQ300FVH5 { # Captive Portal bypass
-	hardware ethernet a4:5e:60:e4:ea:0d;
+host C02LX120FH03 { # Captive Portal bypass
+	hardware ethernet 60:03:08:9e:14:b6;
 	fixed-address 10.0.12.192;
 }
 

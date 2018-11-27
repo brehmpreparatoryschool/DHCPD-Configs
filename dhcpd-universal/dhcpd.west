@@ -57,11 +57,6 @@ host C02MPH1GFH00 { # Captive Portal bypass
 	fixed-address 10.0.15.203;
 }
 
-host C02LX120FH03 { # Captive Portal bypass
-        hardware ethernet 60:03:08:9e:14:b6;
-        fixed-address 10.0.15.204;
-}
-
 #+++++++
 #
 #  Captive Portal bypass for Brehm Arrowsmith
