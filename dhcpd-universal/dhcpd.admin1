@@ -113,6 +113,11 @@ host C02MPDFSFH00 { # Social Media bypass
 	fixed-address 10.0.13.237;
 }
 
+host Admin1313ChromeBox { # Social Media bypass
+	hardware ethernet e8:03:9a:ac:29:d6;
+	fixed-address 10.0.13.238;
+}
+
 #
 # End of /etc/dhcp/dhcpd.admin1
 #
