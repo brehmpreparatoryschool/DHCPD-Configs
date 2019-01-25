@@ -10,7 +10,7 @@ subnet 10.0.12.0 netmask 255.255.255.0 {
                 failover peer "dhcp-failover";
                 default-lease-time 3600;
                 max-lease-time 3600;                
-                range 10.0.12.100 10.0.12.191;
+                range 10.0.12.103 10.0.12.191;
         }
 }
 
