@@ -27,9 +27,9 @@ host mr16-admin-1-south-00180a3508da { # Meraki AP
 	fixed-address 10.0.13.36;
 }
 
-host Printer-Admin7830 { # Main Admin Xerox
-	hardware ethernet 9c:93:4e:1d:6e:4c;
-	fixed-address 10.0.13.91;
+host Printer-Admin3004ex { # Main Admin Ricoh
+	hardware ethernet 58:38:79:18:d0:85;
+	fixed-address 10.0.13.92;
 }
 
 host C02KV14YDNCR { # Social Media Bypass
