@@ -103,7 +103,7 @@ host YM9160E41BV { # Social Media bypass
 }
 
 host C02T13GDFVH4.wired { # Social Media bypass
-        hardware ethernet 0c:4d:e9:b5:52:63;
+        hardware ethernet 00:50:b6:de:90:0b;
         fixed-address 10.0.13.234
 ;
 }
