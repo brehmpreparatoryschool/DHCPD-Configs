@@ -37,6 +37,11 @@ host C02KV14YDNCR { # Social Media Bypass
 	fixed-address 10.0.13.199;
 }
 
+host AdminHRChromeBook { # Captive Portal Bypass
+	hardware ethernet dc:a9:71:d3:55:40;
+	fixed-address 10.0.13.192;
+}
+
 host D25N103RF8J7 { # Captive Portal bypass
 	hardware ethernet 0c:4d:e9:a1:dc:e4;
 	fixed-address 10.0.13.193;
