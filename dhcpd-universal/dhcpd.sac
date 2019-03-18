@@ -37,8 +37,8 @@ host mr18-sac-student-store-00180a7a52ba { # Meraki AP
 	fixed-address 10.0.17.26;
 }
 
-host mr26-sac-dining-hall-west-00180a6b1c70 { # Meraki AP
-	hardware ethernet 00:18:0a:6b:1c:70;
+host mr42-sac-dining-hall-west-e0cbbc8e7fcb { # Meraki AP
+	hardware ethernet e0:cb:bc:8e:7f:cb;
 	fixed-address 10.0.17.27;
 }
 
