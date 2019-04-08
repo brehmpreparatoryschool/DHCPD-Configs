@@ -57,13 +57,8 @@ host C17KFEK1DNCR { # Captive Portal Bypass
 	fixed-address 10.0.19.197;
 }
 
-host C02TX194HV2D { # Captive Portal Bypass
-	hardware ethernet 8c:85:90:01:1c:cd;
-	fixed-address 10.0.19.198;
-}
-
 host C02TX1HPHV2D { # Captive Portal Bypass
-	hardware ethernet 8c:85:90:01:19:15;
+	hardware ethernet 8c:85:90:01:19:51;
 	fixed-address 10.0.19.199;
 }
 
