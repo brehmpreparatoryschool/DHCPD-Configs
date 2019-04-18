@@ -52,6 +52,12 @@ host C02M728YFH00 { # Captive Portal bypass
 	fixed-address 10.0.15.196;
 }
 
+host C02MPGZ5FH00 {
+	hardware ethernet 3c:15:c2:d0:ed:c6;
+	fixed-address 10.0.15.197;
+}
+
+
 host C02MPH1GFH00 { # Captive Portal bypass
 	hardware ethernet 3c:15:c2:d0:f3:78;
 	fixed-address 10.0.15.203;
