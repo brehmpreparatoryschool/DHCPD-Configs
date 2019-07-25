@@ -28,7 +28,7 @@ host DumpsterCamera {
 }
 
 host C02FT6VXDHJF { # Captive Portal Bypass
-	hardware ethernet c8:2a:14:35:3a:c1;
+	hardware ethernet a8:60:b6:23:14:49;
 	fixed-address 10.0.10.193;
 }
 
