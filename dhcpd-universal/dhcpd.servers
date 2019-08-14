@@ -43,21 +43,6 @@ host netmon { # Nagios/MRTG
 	fixed-address 10.0.64.122;
 }
 
-host Win81-SkNet { # SkNet Exterior Doors
-	hardware ethernet 00:50:56:8d:2f:22;
-	fixed-address 10.0.64.156;
-}
-
-host Win71-QB-COO { # QB Client
-	hardware ethernet 00:50:56:8e:b4:26;
-	fixed-address 10.0.64.166;
-}
-
-host Win71-QB-CFO { # QB Client
-	hardware ethernet 00:50:56:8e:c7:29;
-	fixed-address 10.0.64.167;
-}
-
 host Win71-BASC { # BASC Testing
 	hardware ethernet 00:50:56:8e:f4:2d;
 	fixed-address 10.0.64.168;
@@ -68,31 +53,6 @@ host Win81-HR { # HR machine for background checks
 	fixed-address 10.0.64.169;
 }
 
-host Win71-QB-Bmgr { # QB Client
-	hardware ethernet 00:50:56:8e:76:50;
-	fixed-address 10.0.64.173;
-}
-
-host Win71-QB-BSFoff { # QB Client
-	hardware ethernet 00:50:56:8e:71:e0;
-	fixed-address 10.0.64.174;
-}
-
-host Win71-QB-IT { # IT Test Machine
-	hardware ethernet 00:50:56:8e:52:38;
-	fixed-address 10.0.64.175;
-}
-
-host Win71-QB-BFA1 { # QB Client
-	hardware ethernet 00:50:56:8e:e3:ac;
-	fixed-address 10.0.64.176;
-}
-
-host Win71-QB-BFA2 { # QB Client
-	hardware ethernet 00:50:56:8e:f5:ee;
-	fixed-address 10.0.64.177;
-}
-
 host imagemaster { # Imagr
 	hardware ethernet 00:50:56:8e:e2:92;
 	fixed-address 10.0.64.187;
@@ -101,11 +61,6 @@ host imagemaster { # Imagr
 host Win7-XDA-Agent { # Xerox Device Agent -- shutdown
 	hardware ethernet 00:50:56:8e:5c:c0;
 	fixed-address 10.0.64.194;
-}
-
-host puppet { # Puppet server dev -- verify continued use
-	hardware ethernet 00:50:56:8e:ee:05;
-	fixed-address 10.0.64.203;
 }
 
 host software { # Munki server
