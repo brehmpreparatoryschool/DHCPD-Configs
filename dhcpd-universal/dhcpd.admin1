@@ -32,9 +32,9 @@ host Printer-Admin3004ex { # Main Admin Ricoh
 	fixed-address 10.0.13.92;
 }
 
-host C02KV14YDNCR { # Social Media Bypass
-	hardware ethernet 10:dd:b1:cd:81:c6;
-	fixed-address 10.0.13.199;
+host C02TX1K0HV20 { # Captive Portal Bypass
+	hardware ethernet 38:c9:86:53:5d:9a;
+	fixed-address 10.0.13.198;
 }
 
 host AdminHRChromeBook { # Captive Portal Bypass
@@ -57,7 +57,7 @@ host D25N103NF8J7 { # Captive Portal bypass
 	fixed-address 10.0.13.197;
 }
 
-host C02TX1K0HV2D { # Social Media bypass
+host FVFYX2YLL412 { # Social Media bypass
 	hardware ethernet 00:50:b6:8a:c8:c3;
 	fixed-address 10.0.13.224;
 }
