@@ -37,6 +37,11 @@ host C02TX1K0HV20 { # Captive Portal Bypass
 	fixed-address 10.0.13.198;
 }
 
+host C02KV14YDNCR { # Captive Portal Bypass
+	hardware ethernet 10:dd:b1:cd:81:c6;
+	fixed-address 10.0.13.199;
+}
+
 host AdminHRChromeBook { # Captive Portal Bypass
 	hardware ethernet dc:a9:71:d3:55:40;
 	fixed-address 10.0.13.192;
