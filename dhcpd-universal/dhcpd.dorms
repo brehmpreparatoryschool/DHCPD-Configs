@@ -128,6 +128,11 @@ host D25V80E8H7VF { # Dorm 5 iMac with Captive Portal bypass
 	fixed-address 10.0.14.228;
 }
 
+host C02TW8Z1HV2D { # Social Media bypass
+	hardware ethernet 8c:85:90:01:a6:da;
+	fixed-address 10.0.14.229;
+}
+
 #
 # End of /etc/dhcp/dhcpd.dorms
 #
