@@ -62,6 +62,11 @@ host FVFYX2Q6L412 { # Captive Portal bypass
 	fixed-address 10.0.12.194;
 }
 
+host C02MPE9UFH00 { # Captive Portal bypass
+	hardware ethernet a8:60:b6:27:5d:b8;
+	fixed-address 10.0.12.195;
+}
+
 host C02PQBB5FVH5 { # Captive Portal bypass
 	hardware ethernet a4:5e:60:e1:8d:5f;
 	fixed-address 10.0.12.196;
