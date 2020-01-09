@@ -52,6 +52,11 @@ host D25N103RF8J7 { # Captive Portal bypass
 	fixed-address 10.0.13.193;
 }
 
+host FVFZT4VLL412 { # Captive Portal bypass
+	hardware ethernet f8:ff:c2:27:fe:9c;
+	fixed-address 10.0.13.194;
+}
+
 host C02TX1EUHV2D { # Social Media Bypass
 	hardware ethernet 00:50:b6:8c:19:b8;
 	fixed-address 10.0.13.228;
