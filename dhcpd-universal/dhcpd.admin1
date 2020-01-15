@@ -52,9 +52,9 @@ host D25N103RF8J7 { # Captive Portal bypass
 	fixed-address 10.0.13.193;
 }
 
-host FVFZT4VLL412 { # Captive Portal bypass
+host FVFZT4VLL412 { # Social Media Bypass
 	hardware ethernet f8:ff:c2:27:fe:9c;
-	fixed-address 10.0.13.194;
+	fixed-address 10.0.13.231;
 }
 
 host C02TX1EUHV2D.wired { # Social Media Bypass
@@ -106,11 +106,6 @@ host C02MV133FD58 { # Social Media bypass
 host AppleTVonfright { # Social Media bypass
 	hardware ethernet b8:78:2e:58:8f:99;
 	fixed-address 10.0.13.230;
-}
-
-host C02MPFBQFH00 { # Captive Portal bypass
-        hardware ethernet 3c:15:c2:d0:df:a8;
-        fixed-address 10.0.13.231;
 }
 
 host C02T13GDFVH4 { # Social Media bypass
