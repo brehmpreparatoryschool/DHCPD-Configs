@@ -33,7 +33,7 @@ host Printer-Admin3004ex { # Main Admin Ricoh
 }
 
 host C02TX1K0HV20 { # Captive Portal Bypass
-	hardware ethernet 38:c9:86:53:5d:9a;
+	hardware ethernet 00:50:b6:8c:1a:a7;
 	fixed-address 10.0.13.198;
 }
 
