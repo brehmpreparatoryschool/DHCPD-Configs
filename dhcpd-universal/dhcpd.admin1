@@ -97,7 +97,6 @@ host D25PW064F8J7 { # Social Media bypass
         fixed-address 10.0.13.227;
 }
 
-
 host C02MV133FD58 { # Social Media bypass
 	hardware ethernet 3c:15:c2:dc:de:1e;
 	fixed-address 10.0.13.229;
@@ -125,7 +124,7 @@ host C02T13GDFVH4.wired { # Social Media bypass
 
 host C02TX1EUHV2D.wifi { # Social Media Bypass
 	hardware ethernet 8c:85:90:01:24:6b;
-	fixed-address 10.0.13.235; 
+	fixed-address 10.0.13.239; 
 }
 
 host C02MPDFSFH00 { # Social Media bypass
