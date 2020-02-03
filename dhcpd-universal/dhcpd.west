@@ -27,11 +27,10 @@ host mr16-west-academic-west-00180a830c5e { # Meraki AP
 	fixed-address 10.0.15.24;
 }
 
-host C02MPFECFH00 { # Captive Portal bypass
-	hardware ethernet 3c:15:c2:d0:75:34;
-	fixed-address 10.0.15.192;
+host C02R5Q1QFVH5 { # Captive Portal bypass
+        hardware ethernet f4:5c:89:a3:4f:4f;
+        fixed-address 10.0.15.192;
 }
-
 host C02MNUHKFH00 { # Captive Portal bypass
 	hardware ethernet 3c:15:c2:cf:38:5a;
 	fixed-address 10.0.15.193;
