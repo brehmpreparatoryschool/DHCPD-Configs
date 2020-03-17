@@ -82,6 +82,11 @@ host FVFYXTQUL412 { # Captive Portal bypass
 	fixed-address 10.0.13.200;
 }
 
+host C02TX2D2HV2D {
+	hardware ethernet 8c:85:90:07:5d:31;
+	fixed-address 10.0.13.201;
+}
+
 host FVFYX2YLL412 { # Social Media bypass
 	hardware ethernet 00:50:b6:8a:c8:c3;
 	fixed-address 10.0.13.224;
