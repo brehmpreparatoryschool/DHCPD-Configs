@@ -32,6 +32,11 @@ host C02FT6VXDHJF { # Captive Portal Bypass
 	fixed-address 10.0.10.193;
 }
 
+host FVFYXTHVJ410 { # Captive Portal Bypass
+	hardware ethernet a4:83:e7:04:ac:3f;
+	fixed-address 10.0.10.194;
+}
+
 host ADP2133 { # Captive Portal bypass -- ADP kiosk
 	hardware ethernet 78:fd:94:6c:c7:25;
 	fixed-address 10.0.10.197;
