@@ -62,6 +62,12 @@ host C02TX1HPHV2D { # Captive Portal Bypass
 	fixed-address 10.0.19.199;
 }
 
+host D25HV2DHDHJR { # Social media bypass
+	hardware ethernet 40:62:8f:2d:ad:d3;
+	fixed-address 10.0.19.224;
+}
+
+
 #
 # End of /etc/dhcp/dhcpd.nursing
 #
