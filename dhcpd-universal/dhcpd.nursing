@@ -63,7 +63,7 @@ host C02TX1HPHV2D { # Captive Portal Bypass
 }
 
 host D25HV2DHDHJR { # Social media bypass
-	hardware ethernet 40:62:8f:2d:ad:d3;
+	hardware ethernet 40:6c:8f:2d:ad:d3;
 	fixed-address 10.0.19.224;
 }
 
