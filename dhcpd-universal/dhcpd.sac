@@ -17,6 +17,11 @@ subnet 10.0.17.0 netmask 255.255.255.0 {
 #
 # Put static reservations here
 #
+host 2024P_SAC_H1MYX42 { # Static for VLAN1 on Trusted Switch
+	hardware ethernet f4:8e:38:04:f2:0a;
+	fixed-address 10.0.17.2;
+}
+
 host sac-dining-hall-av-room-00180a381caa { # Meraki AP
 	hardware ethernet 00:18:0a:38:1c:aa;
 	fixed-address 10.0.17.23;
